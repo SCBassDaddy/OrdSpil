@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <html class="no-js" lang="">                                                          
+    <meta charset="utf-8">                                    
+    <title>Word Game</title>                                                         
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="canvas.js" type="module"></script>
+    <script src="Words.js"></script>
+    <script src="UI.js"></script>
+</head>
+<body style="padding: 0; margin: 0;" >
+
+  <section class="answerWrapper">
+    <form class="answer">
+      <input type="text" id="answerText" value="" required minlength="2" maxlength="20" size="10" autocomplete="off">
+      <button type="button" id="svarKnap">SVAR</button>
+      <button type="button" id="startKnap">START</button>
+    </form>
+  </section>
+
+  <CANVAS></CANVAS>
+</body>
+
+<style>
+  body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+  }
+
+  CANVAS {
+    background-color: white;
+    z-index: 1
+  }
+
+  .answerWrapper {
+    width:1000px;
+    height: 800px;
+    position: absolute;
+    left: auto;
+    top: auto;
+  }
+
+  .answer {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    left: 400px;
+    top: 200px;
+    z-index: 200;
+  }
+
+  #answerText {
+    position: relative;
+    height: 20px;
+    top: 25px;
+    left: 63px;
+  }
+
+  #startKnap {
+    position: fixed;
+    left: 46%;
+    top: 45%;
+    font-size: 50px;
+    background-color: whitesmoke;
+    color: blue;
+    border-radius: 5px;
+    border-color: transparent;
+  }
+
+  #svarKnap {
+    position: fixed;
+    left: 20px;
+    color: blue;
+    background-color:transparent;
+    border-color: transparent;
+  }
+
+  #svarKnap:hover {
+    color: chocolate;
+    background-color:white;
+  }
+
+</style>
