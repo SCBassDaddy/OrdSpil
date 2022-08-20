@@ -7,12 +7,21 @@ CANVAS.width = 1000;
 CANVAS.height = 800;
 
 //-----Setup-----//
-//Levels & Backgrounds
-let level = 0;
+//Level and timer declarations
+let level = 1;
 let attempts = 0;
 let fails = 0;
 let killAnimationTimer = 0;
 let bonus = 0;
+let damageToMonster
+let pointsToPlayer
+let showDamageTimer = 0;
+let showPointsTimer = 0;
+let gameRunning = false;
+
+function gameRunningState() {
+  gameRunning = true;
+}
 
 //-----BACKGROUND IMAGES-----//
 
@@ -234,6 +243,11 @@ function setKillAnimationTimer() {
   bonus = 0;
 }
 
+function setDamageTimer() {
+  showPointsTimer = 0;
+  showDamageTimer = 0;
+}
+
 //AnswerBox
 const answerBox = new Image();
 answerBox.src = "./img/AnswerBox.png";
@@ -244,6 +258,11 @@ let sætningColor = "red"
 //Hide textarea in the beginning
 document.getElementById("answerText").style.visibility = 'hidden'
 
+//Textarea cursor focus
+function setCursorToTextarea() {
+document.getElementById("answerText").focus();
+}
+
 //Hide textarea in the beginning
 document.getElementById("svarKnap").style.visibility = 'hidden'
 
@@ -251,7 +270,7 @@ document.getElementById("svarKnap").style.visibility = 'hidden'
 document.getElementById("svarKnap").onclick = function() {checkSvar()};
 
 //startKnap click function
-document.getElementById("startKnap").onclick = function() {animate()};
+document.getElementById("startKnap").onclick = function() {animate(), setCursorToTextarea(), gameRunningState()};
 
 //Ord til duel
 let ordTilDuel = ""
@@ -278,7 +297,11 @@ function checkSvar() {
 
   if (answer === wordsArr[ordTilDuel].ord && attempts === 0) {
     healthValue -= 200;
+    damageToMonster = 200;
     points += 200;
+    pointsToPlayer = 200;
+    showDamageTimer = 1;
+    showPointsTimer = 1;
     attempts = 0
     sætningColor = "red"
     if (healthValue > 0) {
@@ -287,7 +310,11 @@ function checkSvar() {
       }
   } else if (answer === wordsArr[ordTilDuel].ord && attempts > 0) {
     healthValue -= 50;
+    damageToMonster = 50;
     points += 50;
+    pointsToPlayer = 50;
+    showDamageTimer = 1;
+    showPointsTimer = 1;
     attempts = 0
     sætningColor = "red"
     if (healthValue > 0) {
@@ -310,6 +337,8 @@ function checkSvar() {
     updateBackground()
     }, 1000);
     points += 300
+    pointsToPlayer = 200 + 300;
+    showPointsTimer = 1;
     fails = 0;
     level++
     killAnimationTimer = 1;
@@ -322,6 +351,8 @@ function checkSvar() {
     updateBackground()
     }, 1000);
     points += 50
+    pointsToPlayer = 50 + 100;
+    showPointsTimer = 1;
     fails = 0;
     level++
     killAnimationTimer = 1;
@@ -387,6 +418,16 @@ function animate() {
     }, 1000);
   }
 
+  if (showPointsTimer === 1 && level < 15) {
+    showPoints(C, 90, 380, pointsToPlayer)
+    if (showDamageTimer === 1) {
+      showDamage(C, 800, 380, damageToMonster)
+    }
+    setTimeout(() => {
+      setDamageTimer()
+    }, 700);
+  }
+
   //Draw boss text
   if (level === 5 || level === 10 || level === 15) {
       boss(C)
@@ -396,9 +437,12 @@ function animate() {
 
 //Allow enter-key in textarea
 document.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
+  if (event.key === "Enter" && gameRunning === true) {
     event.preventDefault();
     document.getElementById("svarKnap").click();
+  } else if (event.key === "Enter" && gameRunning === false) {
+    event.preventDefault();
+    document.getElementById("startKnap").click();
   }
 });
 

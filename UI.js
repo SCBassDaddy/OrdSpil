@@ -1,7 +1,7 @@
 function healthNum(C, healthValue, healthX, healthY) {
-  C.font= "bolder 30px Arial";
+  C.font= "bolder 40px Arial";
   C.fillStyle = "red";
-  C.fillText("Liv " + healthValue, healthX + 100, healthY + 200)
+  C.fillText("Liv " + healthValue, healthX + 75, healthY + 200)
 }
 
 function currentPoints(C, points) {
@@ -13,7 +13,19 @@ function currentPoints(C, points) {
 function showLevel(C, level) {
   C.font = "bolder 30px Arial";
   C.fillStyle = "blue";
-  C.fillText("Level: " + level, 850, 35)
+  C.fillText("Bane: " + level, 860, 35)
+}
+
+function showPoints(C, x, y, pointsToPlayer) {
+  C.font = "bolder 40px Arial";
+  C.fillStyle = "Chartreuse";
+  C.fillText("+" + pointsToPlayer, x, y)
+}
+
+function showDamage(C, x, y, damageToMonster) {
+  C.font = "bolder 40px Arial";
+  C.fillStyle = "red";
+  C.fillText("-" + damageToMonster, x, y)
 }
 
 function killAnimation(C) {
@@ -34,7 +46,7 @@ function boss(C) {
 function showBonus(C) {
   C.font = "bolder 40px Arial";
   C.fillStyle = "orange";
-  C.fillText("BONUS 0 fejl", 380, 170)
+  C.fillText("BONUS 0 fejl", 30, 320)
 }
 
 function endResult(C) {
