@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Mystery</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="Clue8.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="console-wrapper">
+        <a href="../index.html" id="return"><=</a>
+        <h6 id="clue-number">8</h6>
+        <div class="title-wrapper">
+          <h1 id="title"></h1>
+        </div>
+        <h2 id="bot-expression"></h2>
+        <p id="bot-comment"></p>
+      </div>
+    </header>
+
+    <main>
+      <div id="game-wrapper">
+        <h2 class="c8-header">Click to change color</h2>
+        <ul class="staticCircles">
+          <li><h2 class="c8-row-text">1</h2></li>
+          <li class="staticCircle red"></li>
+          <li class="staticCircle blue"></li>
+          <li class="staticCircle green"></li>
+          <li class="staticCircle yellow"></li>
+          <li class="staticCircle pink"></li>
+        </ul>
+        <ul class="staticCircles">
+          <li><h2 class="c8-row-text">2</h2></li>
+          <li class="staticCircle yellow"></li>
+          <li class="staticCircle pink"></li>
+          <li class="staticCircle red"></li>
+          <li class="staticCircle blue"></li>
+          <li class="staticCircle green"></li>
+        </ul>
+        <ul class="staticCircles">
+          <li><h2 class="c8-row-text">3</h2></li>
+          <li class="staticCircle blue"></li>
+          <li class="staticCircle green"></li>
+          <li class="staticCircle yellow"></li>
+          <li class="staticCircle pink"></li>
+          <li class="staticCircle red"></li>
+        </ul>
+        <ul class="staticCircles">
+          <li><h2 class="c8-row-text">4</h2></li>
+          <li class="staticCircle green"></li>
+          <li class="staticCircle yellow"></li>
+          <li class="staticCircle pink"></li>
+          <li class="staticCircle red"></li>
+          <li class="staticCircle blue"></li>
+        </ul>
+        <ul class="staticCircles">
+          <li><h2 class="c8-row-text">5</h2></li>
+          <li class="staticCircle green"></li>
+          <li class="staticCircle yellow"></li>
+          <li class="staticCircle pink"></li>
+          <li class="staticCircle red"></li>
+          <li class="staticCircle blue"></li>
+        </ul>
+        <ul class="activeCircles">
+          <li><h2 class="c8-row-text">6</h2></li>
+          <li class="activeCircle"><input type="submit" value="" id="color1" class="colorButton"></li>
+          <li class="activeCircle"><input type="submit" value="" id="color2" class="colorButton"></li>
+          <li class="activeCircle"><input type="submit" value="" id="color3" class="colorButton"></li>
+          <li class="activeCircle"><input type="submit" value="" id="color4" class="colorButton"></li>
+          <li class="activeCircle"><input type="submit" value="" id="color5" class="colorButton"></li>
+        </ul>
+
+        <div class="c8-check-container">
+          <input type="submit" value="CHECK" id="c8-check">
+        </div>
+    </div>
+
+      <h3 id="victory-clue"></h3>
+    </main>
+
+	<script src="Clue8.js"></script>
+  </body>
+</html>

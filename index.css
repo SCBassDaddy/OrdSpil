@@ -1,0 +1,95 @@
+#clues-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.clue-box {
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+  margin: 20px;
+  background-color: bisque;
+  border: 8px solid chocolate;
+  text-align: center;
+  font-family: "Tektur";
+}
+
+.clue-box a {
+  font-size: 20px;
+}
+
+#main-answer-box {
+  height: auto;
+  width: 100%;
+}
+
+.main-answer-table {
+  height: auto;
+  width: auto;
+  background-color: black;
+  margin: 0 auto;
+  font-size: 40px;
+  padding-top: 30px;
+}
+
+.main-answer-table tr {
+  height: auto;
+  width: auto;
+}
+
+.main-answer-table td {
+  border-right: 2px solid rgb(72, 72, 72);
+  border-left: 2px solid rgb(72, 72, 72);
+  padding: 4px;
+}
+
+.row1 {
+  color: chocolate;
+}
+
+#clues-header {
+  background-color: #1c1c1c;
+  padding: 30px;
+  border-top: 4px solid green;
+  border-bottom: 2px solid green;
+}
+
+#win-page {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  display: none;
+  padding-bottom: 50px;
+}
+
+#win-page h2 {
+  line-height: 1;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  max-width: 600px;
+}
+
+#win-page img {
+  margin: 20px auto;
+  width: 50%;
+  max-width: 600px;
+  border-radius: 25%;
+}
+
+@media only screen and (max-width: 600px) {
+  .clue-box {
+    height: 60px;
+    width: 60px;
+  }
+
+  .clue-box a {
+    font-size: 14px;
+  }
+
+  .main-answer-table {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Mystery</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="clue13.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="console-wrapper">
+        <a href="../index.html" id="return"><=</a>
+        <h6 id="clue-number">13</h6>
+        <div class="title-wrapper">
+          <h1 id="title"></h1>
+        </div>
+        <h2 id="bot-expression"></h2>
+        <p id="bot-comment"></p>
+      </div>
+    </header>
+
+    <main>
+      <div id="game-wrapper">
+        <div class="table-wrapper">
+          <table class="doomBox">          
+            <tr id="tr1">
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red">4</td>
+              <td class="red br">7</td>
+              <td class="white"><input type="text" maxlength="1" title="1" class="grid-input white"/></td>
+              <td class="white">8</td>
+              <td class="white br">9</td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red">1</td>
+              <td class="red">6</td>
+            </tr>
+            <tr id="tr2">
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="white br"><input type="text" maxlength="1" title="1" class="grid-input white"/></td>
+              <td class="white">6</td>
+              <td class="white"><input type="text" maxlength="1" title="1" class="grid-input white"/></td>
+              <td class="white br"><input type="text" maxlength="1" title="1" class="grid-input white"/></td>
+              <td class="white"><input type="text" maxlength="1" title="1" class="grid-input white"/></td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red">4</td>
+            </tr>
+            <tr id="tr3">
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red">3</td>
+              <td class="white br">6</td>
+              <td class="skullLocks"><input type="text" maxlength="1" title="1" class="grid-input skullLocks"/></td>
+              <td class="white"><input type="text" maxlength="1" title="1" class="grid-input white"/></td>
+              <td class="skullLocks br"><input type="text" maxlength="1" title="1" class="grid-input skullLocks"/></td>
+              <td class="white">2</td>
+              <td class="red">7</td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+            </tr>
+            <tr id="tr4">
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red">8</td>
+              <td class="white br">5</td>
+              <td class="white"><input type="text" maxlength="1" title="1" class="grid-input white"/></td>
+              <td class="white">2</td>
+              <td class="white br"><input type="text" maxlength="1" title="1" class="grid-input white"/></td>
+              <td class="white">4</td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+            </tr>
+            <tr id="tr5">
+              <td class="red">6</td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red br"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="white">5</td>
+              <td class="skullLocks"><input type="text" maxlength="1" title="1" class="grid-input skullLocks"/></td>
+              <td class="white br"><input type="text" maxlength="1" title="1" class="grid-input white"/></td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+            </tr>
+            <tr id="tr6">
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red br"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="white"><input type="text" maxlength="1" title="1" class="grid-input white"/></td>
+              <td class="white"><input type="text" maxlength="1" title="1" class="grid-input white"/></td>
+              <td class="white br">1</td>
+              <td class="red">9</td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red">3</td>
+            </tr>
+            <tr id="tr7">
+              <td class="white">5</td>
+              <td class="white"><input type="text" maxlength="1" title="1" class="grid-input white"/></td>
+              <td class="red br"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red">3</td>
+              <td class="red br">7</td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="white"><input type="text" maxlength="1" title="1" class="grid-input white"/></td>
+              <td class="white"><input type="text" maxlength="1" title="1" class="grid-input white"/></td>
+            </tr>
+            <tr id="tr8">
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red">9</td>
+              <td class="white br">4</td>
+              <td class="red">2</td>
+              <td class="white"><input type="text" maxlength="1" title="1" class="grid-input white"/></td>
+              <td class="red br"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="white">8</td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+            </tr>
+            <tr id="tr9">
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red br">1</td>
+              <td class="white"><input type="text" maxlength="1" title="1" class="grid-input white"/></td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="white br">8</td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+              <td class="red">9</td>
+              <td class="red"><input type="text" maxlength="1" title="1" class="grid-input red"/></td>
+            </tr>
+          
+          </table>
+        </div>
+
+        <input type="submit" value="CHECK" id="check-submit">
+        <br>
+        <h1 class="clue-13">CLUE</h1>
+        <h2 id="clue-text" class="clue-13">"tunoc" "rudclaa"</h2>
+        <input type="text" id="answer" name="c13-answer" placeholder="Write..." autocomplete="off" spellcheck="false">
+        <br>
+        <input type="submit" value="ANSWER" id="answer-submit">
+      </div>
+
+      <h3 id="victory-clue"></h3>
+    </main>
+
+    <footer>
+
+    </footer>
+
+	<script src="Clue13.js"></script>
+  
+  </body>
+</html>

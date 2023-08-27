@@ -1,0 +1,24 @@
+.center-image-wrapper {
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: 8px solid chocolate;
+  max-width: 500px;
+  border-radius: 50%;
+  box-shadow: 10px 5px 25px red;
+}
+
+.center-image-wrapper img {
+  height: auto;
+  width: 100%;
+  border-radius: 50%;
+  margin-top: 5%;
+  box-shadow: 10px 5px 25px purple;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+}

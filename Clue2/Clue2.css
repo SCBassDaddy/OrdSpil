@@ -1,0 +1,49 @@
+.c2-header {
+  font-size: 40px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+#flag-back {
+  height: 100px;
+  width: 60%;
+  background-image: url(../img/c2-flag.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  display: none;
+}
+
+.fire-lock {
+  height: 40px;
+  width: 80px;
+  border-radius: 25%;
+  background-color: #393939;
+  display: inline-block;
+  font-size: 30px;
+  color: orange;
+  text-align: center;
+  margin: 40px 30px;
+}
+
+#firewallHint {
+  display: none;
+}
+
+#hack-submit {
+  height: 40px;
+  width: 100px;
+  color: rgb(128, 38, 0);
+  background-color: #1c1c1c;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+label {
+  font-size: 30px;
+}
+
+#victory-clue {
+  display: none;
+}

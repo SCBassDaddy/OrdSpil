@@ -1,0 +1,96 @@
+.red {
+  color: rgb(0, 0, 0);
+}
+
+.white {
+  color: rgb(152, 3, 3);
+}
+
+.brown {
+  color: rgb(0, 0, 0);
+  background-color: black;
+}
+
+.brown2 {
+  color: rgb(56, 0, 0);
+  background-color: rgb(0, 0, 0);
+}
+
+.skullLocks {
+  color: rgb(141, 162, 22);
+  text-shadow: 1px 6px 8px rgba(247, 116, 116, 0.5);
+}
+
+.doomBox {
+  width: 300px;
+  margin: 0 auto;
+  padding: 30px;
+  margin-top: 30px;
+  font-size: 30px;
+  background-color: rgb(56, 0, 0);
+  border: 4px solid rgb(185, 0, 0);
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px red;
+  box-shadow: 0px 0px 400px rgb(179, 255, 0.5);
+}
+
+td {
+  box-shadow: 0px 0px 8px red;
+}
+
+#tr3 td {
+  border-bottom: 2px solid green;
+}
+
+#tr6 td {
+  border-bottom: 2px solid green;
+}
+
+.br {
+  border-right: 2px solid green;
+}
+
+.grid-input {
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  background-color: rgb(56, 0, 0);
+  text-align: center;
+  border: none;
+  height: 30px;
+  width: 30px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#check-submit {
+  z-index: 99;
+  height: 40px;
+  width: 200px;
+  color: green;
+  background-color: rgb(56, 0, 0);
+  margin-bottom: 20px;
+  font-weight: bold;
+  border: 2px solid red;
+}
+
+#clue-text {
+  font-size: 30px;
+}
+
+.clue-13 {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .doomBox {
+    font-size: 20px;
+    height: 200px;
+    width: 60% !important;
+  }
+
+  .grid-input {
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+  }
+
+}

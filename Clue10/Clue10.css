@@ -1,0 +1,115 @@
+.c10-header {
+  font-size: 30px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.staticPlanets {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: -35px;
+  box-shadow: 5px 5px 100px purple;
+}
+
+.staticPlanets li {
+  list-style: none;
+}
+
+.staticPlanet {
+  height: 40px;
+  width:40px;
+  background-color: black;
+  border-radius: 50%;
+  border: 2px solid chocolate;
+  margin: 10px 10px;
+  box-shadow: 0px 0px 20px rgb(122, 27, 120);
+}
+
+.activeGods {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -35px;
+  box-shadow: -30px 0px 200px rgb(84, 70, 133);
+}
+
+.activeGods li {
+  list-style: none;
+}
+
+.activeGod {
+  height: 50px;
+  width:50px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  box-shadow: 0px 0px 20px rgb(122, 27, 120);
+  margin: 30px 10px;
+}
+
+
+#mercury {
+  background-color: rgb(116, 112, 110);
+}
+
+#venus {
+  background-color: rgb(140, 147, 39);
+}
+
+#mars {
+  background-color: rgb(161, 52, 25);
+}
+
+#earth {
+  background-color: rgb(34, 44, 112);
+}
+
+#jupiter {
+  background-color: rgb(118, 96, 40);
+}
+
+#saturn {
+  background-color: rgb(101, 71, 54);
+}
+
+#uranus {
+  background-color: rgb(97, 188, 222);
+}
+
+#neptune {
+  background-color: rgb(24, 93, 118);
+}
+
+.godButton {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.c10-check-container {
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+#c10-check {
+  height: 40px;
+  width: 200px;
+  background-color: #1c1c1c;
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .staticPlanet {
+    height: 20px;
+    width:20px;
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Mystery</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="Clue10.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="console-wrapper">
+        <a href="../index.html" id="return"><=</a>
+        <h6 id="clue-number">10</h6>
+        <div class="title-wrapper">
+          <h1 id="title"></h1>
+        </div>
+        <h2 id="bot-expression"></h2>
+        <p id="bot-comment"></p>
+      </div>
+    </header>
+
+    <main>
+      <div id="game-wrapper">
+        <h2 class="c10-header">Click to place a god</h2>
+        <ul class="staticPlanets">
+          <li class="staticPlanet" id="p1"></li>
+          <li class="staticPlanet" id="p2"></li>
+          <li class="staticPlanet" id="p3"></li>
+          <li class="staticPlanet" id="p4"></li>
+          <li class="staticPlanet" id="p5"></li>
+          <li class="staticPlanet" id="p6"></li>
+          <li class="staticPlanet" id="p7"></li>
+          <li class="staticPlanet" id="p8"></li>
+        </ul>
+        <h2 class="c10-header">Gods</h2>
+        <ul class="activeGods">
+          <li class="activeGod"><input type="submit" value="J" class="godButton" id="jupiter"></li>
+          <li class="activeGod"><input type="submit" value="Metal" class="godButton" id="mercury"></li>
+          <li class="activeGod"><input type="submit" value="V" class="godButton" id="venus"></li>
+          <li class="activeGod"><input type="submit" value="N" class="godButton" id="neptune"></li>
+          <li class="activeGod"><input type="submit" value="Bar" class="godButton" id="mars"></li>
+          <li class="activeGod"><input type="submit" value="Greek" class="godButton" id="uranus"></li>
+          <li class="activeGod"><input type="submit" value="E" class="godButton" id="earth"></li>
+          <li class="activeGod"><input type="submit" value="S" class="godButton" id="saturn"></li>
+        </ul>
+
+        <div class="c10-check-container">
+          <input type="submit" value="CHECK" id="c10-check">
+        </div>
+    </div>
+
+      <h3 id="victory-clue"></h3>
+    </main>
+
+	<script src="Clue10.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Mystery</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="clue12.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="console-wrapper">
+        <a href="../index.html" id="return"><=</a>
+        <h6 id="clue-number">12</h6>
+        <div class="title-wrapper">
+          <h1 id="title"></h1>
+        </div>
+        <h2 id="bot-expression"></h2>
+        <p id="bot-comment"></p>
+      </div>
+    </header>
+
+    <main>
+      <div id="game-wrapper">
+        <div class="maze-wrapper">
+           <div class="maze-floor">
+            <input type="button" value="U" id="buttonN">
+            <input type="button" value="R" id="buttonE">
+            <input type="button" value="L" id="buttonW">
+            <input type="button" value="D" id="buttonS">
+            <h2 id="response-bot"></h2> 
+            <img src="../img/mazeplayer.svg" alt="player" id="player">
+            <img src="../img/inf.svg" alt="hidden" id="inf">
+            <img src="../img/snake.png" alt="hidden" id="rec">   
+            <img src="../img/mankicks8.png" alt="player" id="kick8">     
+           </div>
+        </div>
+
+        <input type="text" id="answer" name="c12-answer" placeholder="Write..." autocomplete="off" spellcheck="false">
+        <br>
+        <input type="submit" value="ANSWER" id="answer-submit">
+      </div>
+
+      <h3 id="victory-clue"></h3>
+    </main>
+
+    <footer>
+
+    </footer>
+
+	<script src="Clue12.js"></script>
+  
+  </body>
+</html>

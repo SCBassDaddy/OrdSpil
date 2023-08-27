@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Mystery</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="Clue2.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="console-wrapper">
+        <a href="../index.html" id="return"><=</a>
+        <h6 id="clue-number">2</h6>
+        <div class="title-wrapper">
+          <h1 id="title"></h1>
+        </div>
+          <h2 id="bot-expression"></h2>
+          <p id="bot-comment"></p>
+      </div>
+    </header>
+
+    <main>
+      <div id="game-wrapper">
+          <h2 class="c2-header">#21421422432</h2>
+          <label for="1"></label>
+          <input type="number" id="fire-lock1" class="fire-lock" name="1" list="defaultNumbers" placeholder="1" autocomplete="off">
+          <label for="2"></label>
+          <input type="number" id="fire-lock2" class="fire-lock" name="2" list="defaultNumbers" placeholder="2" autocomplete="off">
+          <br> 
+          <label for="3"></label>
+          <input type="number" id="fire-lock3" class="fire-lock" name="3" list="defaultNumbers" placeholder="3" autocomplete="off">
+          <label for="4"></label>
+          <input type="number" id="fire-lock4" class="fire-lock" name="4" list="defaultNumbers" placeholder="4" autocomplete="off">
+          <datalist id="defaultNumbers">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+          </datalist>
+          <br>
+          <input type="submit" value="HACK" id="hack-submit">
+          <br>
+          <h2 id="firewallCheck"></h2>
+          <div id="flag-back"></div>
+          <p id="firewallHint">3.1415926535897932384626433</p>
+          <input type="text" id="answer" name="c1-answer" placeholder="Write..." autocomplete="off" spellcheck="false">
+          <br>
+          <input type="submit" value="ANSWER" id="answer-submit">       
+      </div>
+
+      <h3 id="victory-clue"></h3>
+    </main>
+
+    <footer>
+
+    </footer>
+
+	<script src="Clue2.js"></script>
+  </body>
+</html>

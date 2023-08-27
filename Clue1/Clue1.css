@@ -1,0 +1,11 @@
+.center-image-wrapper {
+  height: 300px;
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.center-image-wrapper img {
+  height: 300px;
+  width: 100%;
+}

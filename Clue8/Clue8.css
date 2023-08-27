@@ -1,0 +1,88 @@
+.c8-header {
+  font-size: 30px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.staticCircles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: -35px;
+}
+
+.staticCircles li {
+  list-style: none;
+}
+
+.activeCircles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: -35px;
+}
+
+.staticCircle {
+  height: 40px;
+  width:40px;
+  border-radius: 50%;
+  border: 2px solid chocolate;
+  margin: 10px 10px;
+}
+
+.activeCircles li {
+  list-style: none;
+}
+
+.activeCircle {
+  height: 40px;
+  width:40px;
+  border-radius: 50%;
+  border: 2px solid chocolate;
+  margin: 10px 10px;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.colorButton {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.c8-check-container {
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+#c8-check {
+  height: 40px;
+  width: 200px;
+  background-color: #1c1c1c;
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}

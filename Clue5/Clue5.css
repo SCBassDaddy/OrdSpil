@@ -1,0 +1,22 @@
+#c5-box {
+  height: 500px;
+  width: 60%;
+  background-color: #393939;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+#c5-check {
+  height: 40px;
+  width: 80px;
+  font-size: 20px;
+  font-weight: 400;
+  color: green;
+  background-color: transparent;
+  border: none;
+  padding-right: 10px;
+  margin-right: -38px;
+}

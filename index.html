@@ -1,89 +1,124 @@
 <!DOCTYPE html>
-<head>
-  <html class="no-js" lang="">                                                          
-    <meta charset="utf-8">                                    
-    <title>Word Game</title>                                                         
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="canvas.js" type="module"></script>
-    <script src="Words.js"></script>
-    <script src="UI.js"></script>
-</head>
-<body style="padding: 0; margin: 0;" >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Mystery 13</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
 
-  <section class="answerWrapper">
-    <form class="answer">
-      <input type="text" id="answerText" value="" required minlength="2" maxlength="20" size="10" autocomplete="off">
-      <button type="button" id="svarKnap">SVAR</button>
-      <button type="button" id="startKnap">START</button>
-    </form>
-  </section>
+    <header>
+      <div class="console-wrapper">
+        <div class="title-wrapper">
+          <h1 id="title"></h1>
+        </div>
+          <h2 id="bot-expression"></h2>
+          <p id="bot-comment"></p>
+      </div>
+    </header>
 
-  <CANVAS></CANVAS>
-</body>
+    <main>
+      <div id="main-answer-box">
+        <table class="main-answer-table">
+          <tr class="row1">
+            <td>T</td>
+            <td>W</td>
+            <td>A</td>
+            <td>S</td>
+            <td>D</td>
+            <td>B</td>
+            <td>E</td>
+            <td>P</td>
+            <td>R</td>
+            <td>I</td>
+            <td>F</td>
+            <td>V</td>
+            <td>M</td>
+          </tr>
+          <tr class="row2">
+            <td>8</td>
+            <td>5</td>
+            <td>4</td>
+            <td>6</td>
+            <td>9</td>
+            <td>1</td>
+            <td>9</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>5</td>
+            <td>5</td>
+            <td>3</td>
+          </tr>
+        </table>
 
-<style>
-  body {
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    overflow: hidden;
-  }
+        <div id="game-wrapper">
+        <input type="text" id="answer" name="c1-answer" placeholder="Write..." autocomplete="off" spellcheck="false">
+        <br>
+        <input type="submit" value="ANSWER" id="answer-submit">
 
-  CANVAS {
-    background-color: white;
-    z-index: 1
-  }
+        <h1 id="clues-header">Clues</h1>
 
-  .answerWrapper {
-    width:1000px;
-    height: 800px;
-    position: absolute;
-    left: auto;
-    top: auto;
-  }
+      </div>
+      </div>
+      
+      <div id="clues-wrapper">
+        <div class="clue-box">
+          <a href="./Clue1/Clue1.html">CLUE 1</a>
+        </div>
+        <div class="clue-box">
+          <a href="./Clue2/Clue2.html">CLUE 2</a>
+        </div>
+        <div class="clue-box">
+          <a href="./Clue3/Clue3.html">CLUE 3</a>
+        </div>
+        <div class="clue-box">
+          <a href="./Clue4/Clue4.html">CLUE 4</a>
+        </div>
+        <div class="clue-box">
+          <a href="./Clue5/Clue5.html">CLUE 5</a>
+        </div>
+        <div class="clue-box">
+          <a href="./Clue6/Clue6.html">CLUE 6</a>
+        </div>
+        <div class="clue-box">
+          <a href="./Clue7/Clue7.html">CLUE 7</a>
+        </div>
+        <div class="clue-box">
+          <a href="./Clue8/Clue8.html">CLUE 8</a>
+        </div>
+        <div class="clue-box">
+          <a href="./Clue9/Clue9.html">CLUE 9</a>
+        </div>
+        <div class="clue-box">
+          <a href="./Clue10/Clue10.html">CLUE 10</a>
+        </div>
+        <div class="clue-box">
+          <a href="./Clue11/Clue11.html">CLUE 11</a>
+        </div>
+        <div class="clue-box">
+          <a href="./Clue12/Clue12.html">CLUE 12</a>
+        </div>
+        <div class="clue-box">
+          <a href="./Clue13/Clue13.html">CLUE 13</a>
+        </div>
+        <div class="clue-box">
+          <a href="./Bonus/Bonus.html">BONUS</a>
+        </div>
+      </div>
+    </main>
 
-  .answer {
-    width: 200px;
-    height: 300px;
-    position: absolute;
-    left: 400px;
-    top: 200px;
-    z-index: 200;
-  }
+    <div id="win-page">
+      <h1>Congratulations</h1>
+      <h2>You've completed the final puzzle. Here's a little something for all your hard work:</h2>
+      <img src="img/trash.jpg" alt="trash">
+      <h2>Thank you for playing!</h2>
+    </div>
 
-  #answerText {
-    position: relative;
-    height: 20px;
-    top: 25px;
-    left: 63px;
-  }
+    <script src="index.js"></script>
 
-  #startKnap {
-    position: fixed;
-    left: 46%;
-    top: 45%;
-    font-size: 50px;
-    background-color: whitesmoke;
-    color: blue;
-    border-radius: 5px;
-    border-color: transparent;
-  }
-
-  #svarKnap {
-    position: fixed;
-    left: 20px;
-    color: blue;
-    background-color:transparent;
-    border-color: transparent;
-  }
-
-  #svarKnap:hover {
-    color: chocolate;
-    background-color:white;
-  }
-
-</style>
+  </body>
+</html>

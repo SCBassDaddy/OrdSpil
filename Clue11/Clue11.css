@@ -1,0 +1,44 @@
+.center-image-wrapper {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.c11-image-container {
+  margin: 0 auto;
+  height: 400px;
+  width: 80%;
+  max-width: 800px;
+}
+
+.c11-image {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/Storm.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  overflow: hidden;
+}
+
+.stormButton {
+  border-radius: 80% 80% 60% 60%;
+  border: none;
+  background-color: rgba(53, 60, 86, 0.363);
+  height: 30px;
+  font-size: 15px;
+  position: relative;
+  top:0;
+  box-shadow: -25px 0px 25px rgb(154, 163, 172), -5px 20px 50px rgb(133, 104, 145), -15px 0px 30px gray, 30px 0px 45px rgb(22, 95, 151);
+}
+
+#stormButton1 {
+  left: 20%;
+}
+
+#stormButton2 {
+  left: 50%;
+}
+

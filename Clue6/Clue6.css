@@ -1,0 +1,43 @@
+#bridge {
+  height: auto;
+  width: 80%;
+  margin: 30px auto;
+  background: #1c1c1c;
+  border-left: 25px dotted rgb(95, 54, 13);
+  border-right: 25px dotted rgb(95, 54, 13);
+}
+
+#bridge label {
+  font-size: 25px;
+}
+
+.bridge-step input[type="radio"]:checked + label {
+  color:chocolate;
+}
+
+.bridge-step {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 25px;
+  background-color: rgb(57, 33, 8);
+  color:#1c1c1c;
+}
+
+.c6-step-nr {
+  height: 20px;
+}
+
+#c6-check {
+  height: 30px;
+  width: 180px;
+  margin-bottom: 30px;
+  background-color: #1c1c1c;
+  color: green;
+}
+
+@media only screen and (max-width: 800px) {
+  .bridge-step {
+    gap: 2px;
+  }
+}

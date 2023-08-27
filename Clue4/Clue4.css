@@ -1,0 +1,14 @@
+#rosetta {
+  height: auto;
+  width: 100%;
+  padding: 60px 0;
+}
+
+#rosetta h2 {
+  font-size: 40px;
+  color: chocolate;
+}
+
+#rosetta p {
+  font-size: 30px;
+}
